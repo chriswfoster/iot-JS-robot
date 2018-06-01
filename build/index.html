@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="./styles.css" />
+<html>
+
+<body class="mainBackground">
+
+    <div style="height: 20vh">
+        <h1>BLEEP BLOOP BLEEP ROBOT CONSOLE</h1>
+        <p>Start by pressing direction keys - A, S, D, and W</p>
+        <p id="display"></p>
+    </div>
+    <div>
+        <input id="hi" onkeyup="keyUpHandler()" onkeydown="keyDownHandler(event)" type="textarea" onblur="this.focus()" autofocus></input>
+
+    </div>
+
+    <script src=" ./socket.io.js "> </script>
+    <script type="text/javascript " src="./methodsAndSockets.js "></script>
+
+</body>
+
+</html>
