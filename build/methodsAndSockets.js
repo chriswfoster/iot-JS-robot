@@ -27,4 +27,5 @@ function keyDownHandler(e) {
 
 function keyUpHandler() {
   document.getElementById("display").innerHTML = ""
+  socket.emit("stop", "halt")
 }
