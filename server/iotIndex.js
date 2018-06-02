@@ -23,7 +23,7 @@ app.use(cors())
 
 const server = http.createServer(app)
 const io = socketIo(server)
-// app.use(express.static(`${__dirname}/../build`))  ///////// I may host from this server someday.
+app.use(express.static(`${__dirname}/../build`))  ///////// I may host from this server someday.
 
 io.on("connection", socket => {
   console.log("A user has connected to the system.")
