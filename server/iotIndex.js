@@ -15,7 +15,7 @@ LEFTF.writeSync(1)
 RIGHTR.writeSync(1)
 RIGHTF.writeSync(1)
 
-const port = 3456
+const port =80 
 
 const app = express()
 app.use(json())
